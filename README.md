@@ -3,6 +3,7 @@ Custom Enum Class Which can be Extends to use Enums
 
 # usage Example
 
+```
 use App\Services\Companies\Shipments\Enums\{
     ShipmentStage,
     ShipmentStatusStage,
@@ -25,3 +26,4 @@ echo constant(ShipmentStatusStage::class . '::' . $status)[1]; // Outputs: Shipm
 // Usage of ShipmentTrackingMethods enum
 echo ShipmentTrackingMethods::NONE['key']; // Outputs: 31300
 echo ShipmentTrackingMethods::TURVO_DRIVER_APP['value']; // Outputs: Turvo Driver app
+```
