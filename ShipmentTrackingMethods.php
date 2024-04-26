@@ -1,6 +1,6 @@
 <?php
 // usage of Custom Enum Class
-use App\Common\Enum;
+use App\Common\Enum\Enum;
 
 class ShipmentTrackingMethods extends Enum
 {
