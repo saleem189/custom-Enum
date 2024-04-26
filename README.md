@@ -27,3 +27,19 @@ echo constant(ShipmentStatusStage::class . '::' . $status)[1]; // Outputs: Shipm
 echo ShipmentTrackingMethods::NONE['key']; // Outputs: 31300
 echo ShipmentTrackingMethods::TURVO_DRIVER_APP['value']; // Outputs: Turvo Driver app
 ```
+```
+// Usage of the keyFromValue() function
+$key = ShipmentStatusStage::keyFromValue(ShipmentStatusStage::PENDING[0]);
+echo "Key for value " . ShipmentStatusStage::PENDING[0] . " is: " . $key . "\n";
+
+// Usage of the keys() function
+$allKeys = ShipmentStatusStage::keys();
+echo "All keys in ShipmentStatusStage enum: " . implode(', ', $allKeys) . "\n";
+
+// Usage of the valuesKeys() function
+$valuesKeys = ShipmentStatusStage::valuesKeys();
+echo "Mapping of values to keys in ShipmentStatusStage enum: \n";
+foreach ($valuesKeys as $value => $key) {
+    echo "Value: " . $value . ", Key: " . $key . "\n";
+}
+```
