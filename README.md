@@ -1,7 +1,18 @@
 # custom-Enum
-Custom Enum Class Which can be Extends to use Enums
+Description:
 
-# usage Example
+The Enum abstract class in PHP serves as a foundation for creating enumerated types, providing essential methods for working with enumerated data. By extending this class, developers can define custom enumerated types with associated keys and values, facilitating structured representation and manipulation of data. The Enum class streamlines the creation and management of enumerated types, enhancing code readability, maintainability, and consistency.
+
+Uses:
+
+- **Defining Enumerated Types:** Extend the Enum class to define custom enumerated types, representing a finite set of related constants.
+- **Accessing Keys and Values:** Use the provided methods like keyFromValue(), keys(), and valuesKeys() to retrieve keys and values from the enum, facilitating data retrieval and manipulation.
+- **Enhancing Readability and Maintainability:** Enums provide a clear and self-documenting way to represent predefined sets of values, improving code readability and making it easier for developers to understand and maintain the codebase.
+- **Ensuring Consistency:** Enumerated types enforce a predefined set of values, reducing the risk of errors and inconsistencies in the code by restricting the possible values to a known set.
+- **Facilitating Data Validation:** Enums can be used to validate input data, ensuring that only valid values are accepted, which helps prevent errors and improve data integrity.
+
+
+# Usage Example
 
 ```
 use App\Services\Companies\Shipments\Enums\{
