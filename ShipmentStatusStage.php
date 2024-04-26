@@ -1,5 +1,5 @@
 <?php
-
+// usage example
 namespace App\Services\Companies\Shipments\Enums;
 
 use App\Common\Enum\Enum;
